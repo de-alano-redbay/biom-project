@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .footer__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center; }
+    .footer__top .footer__nav .footer__nav-heading {
+      font-size: 14px;
+      text-transform: uppercase; }
+    .footer__top .footer__nav .footer__nav-items {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .footer__top .footer__nav .footer__nav-items .footer__nav-link,
+      .footer__top .footer__nav .footer__nav-items .footer__nav-link:visited {
+        text-decoration: none;
+        color: #0099cc;
+        line-height: 1.5; }
+    .footer__top .footer__logo img {
+      width: 241px;
+      height: auto; }
+    .footer__top .footer__contact .footer__contact-heading {
+      font-size: 14px;
+      text-transform: uppercase; }
+    .footer__top .footer__contact .footer__contact-item {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      line-height: 1.8; }
+    .footer__top .footer__contact .footer__contact-icon {
+      width: 14px;
+      margin-right: 6px; }
+  .footer__bottom .footer__copy {
+    text-align: center; }
