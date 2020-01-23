@@ -1,0 +1,38 @@
+.subjects {
+  font-family: $font;
+  &__title {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+
+  .subject {
+    &__title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .subject--sport {
+    .subject__content {
+      height: 500px;
+      background-color: $color-primary;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .subject--transport {
+    .subject__content {
+      height: 700px;
+      background-color: #ffdf00;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
