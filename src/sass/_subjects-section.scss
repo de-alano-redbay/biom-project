@@ -21,10 +21,40 @@
   .subject--sport {
     .subject__content {
       height: 500px;
-      background-color: $color-primary;
+      background-color: #0096E1;
       color: #fff;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image {
+      // background-image: url("/images/pge-stadium.png");
+      background-image: url("./../../dist/images/pge-stadium.png");
+      background-size: cover;
+      background-position:center;
+    }
+    
+    .graph {
+      background-image: url("./../../dist/images/sport-chart.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      &__image {
+        width: 400px;
+        height: auto;
+      }
+      &__caption {
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
   .subject--transport {
@@ -33,6 +63,50 @@
       background-color: #ffdf00;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .graph {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 40px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      &__image {
+        width: 500px;
+        height: auto;
+      }
+      &__caption {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    .description {
+      display: flex;
+      font-size: 16px;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 100px;
+      line-height: 1.6;
+
+      &__text {
+        margin-bottom: 20px;
+
+        &--bold {
+          font-weight: bold;
+        }
+      }
+      .bold {
+        font-weight: bold;
+      }
     }
   }
 }
