@@ -10,6 +10,12 @@
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./../images/bg-warsaw.png");
   background-position: center;
   background-size: cover; }
+  @media (max-width: 768px) {
+    .welcome {
+      padding: 50px 0; } }
+  @media (max-width: 576px) {
+    .welcome {
+      padding: 30px 0; } }
   .welcome .container {
     max-width: 1200px;
     margin: 0 auto; }
@@ -17,6 +23,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px; }
+    @media (max-width: 1200px) {
+      .welcome__tiles {
+        padding: 0 30px; } }
+    @media (max-width: 992px) {
+      .welcome__tiles {
+        gap: 20px;
+        padding: 0 20px; } }
+    @media (max-width: 768px) {
+      .welcome__tiles {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 576px) {
+      .welcome__tiles {
+        grid-template-columns: 1fr;
+        gap: 15px; } }
   .welcome .tile {
     height: 178px;
     box-sizing: border-box;
@@ -30,13 +50,53 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     text-decoration: none;
-    transition: background-color 0.3s ease-out, color 0.3s ease-out; }
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    font-size: 16px; }
+    @media (max-width: 1200px) {
+      .welcome .tile {
+        height: 150px; } }
+    @media (max-width: 992px) {
+      .welcome .tile {
+        height: 140px;
+        font-size: 14px; } }
+    @media (max-width: 768px) {
+      .welcome .tile {
+        height: 130px;
+        font-size: 13px; } }
+    @media (max-width: 576px) {
+      .welcome .tile {
+        height: 80px;
+        flex-direction: row; } }
+    @media (max-width: 400px) {
+      .welcome .tile {
+        height: 60px;
+        font-size: 12px; } }
     .welcome .tile:hover {
       background-color: #fff;
       color: #0099cc; }
     .welcome .tile__icon {
       width: 80px;
       height: 80px; }
+      @media (max-width: 1200px) {
+        .welcome .tile__icon {
+          height: 70px;
+          width: 70px; } }
+      @media (max-width: 992px) {
+        .welcome .tile__icon {
+          height: 60px;
+          width: 60px; } }
+      @media (max-width: 768px) {
+        .welcome .tile__icon {
+          height: 50px;
+          width: 50px; } }
+      @media (max-width: 576px) {
+        .welcome .tile__icon {
+          height: 40px;
+          width: 40px; } }
+      @media (max-width: 400px) {
+        .welcome .tile__icon {
+          width: 30px;
+          height: 30px; } }
     .welcome .tile__title-text {
       margin: 0;
       line-height: 1.4; }
@@ -47,7 +107,23 @@
     text-align: justify;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px; }
+    padding: 15px;
+    font-size: 16px; }
+    @media (max-width: 1200px) {
+      .welcome__text {
+        font-size: 15px;
+        margin-top: 40px; } }
+    @media (max-width: 768px) {
+      .welcome__text {
+        font-size: 14px;
+        margin-top: 30px;
+        max-width: 90%; } }
+    @media (max-width: 576px) {
+      .welcome__text {
+        font-size: 13px; } }
+    @media (max-width: 400px) {
+      .welcome__text {
+        font-size: 12px; } }
   .welcome__input-search {
     box-sizing: border-box;
     display: block;
@@ -55,7 +131,21 @@
     margin: 20px auto;
     padding: 10px 15px;
     border: 1px solid #ccc;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px; }
+    @media (max-width: 1200px) {
+      .welcome__input-search {
+        font-size: 15px; } }
+    @media (max-width: 768px) {
+      .welcome__input-search {
+        max-width: 90%;
+        font-size: 14px; } }
+    @media (max-width: 576px) {
+      .welcome__input-search {
+        font-size: 13px; } }
+    @media (max-width: 400px) {
+      .welcome__input-search {
+        font-size: 12px; } }
 
 .slogans {
   height: 300px;
@@ -83,11 +173,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
   .subjects .subject--sport .image {
-    background-image: url("./../../dist/images/pge-stadium.jpg");
+    background-image: url("./../../dist/images/pge-stadium.png");
     background-size: cover;
     background-position: center; }
   .subjects .subject--sport .graph {
-    background-image: url("./../../dist/images/sport-chart-transparent.png");
+    background-image: url("./../../dist/images/sport-chart.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }

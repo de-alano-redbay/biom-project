@@ -3,6 +3,13 @@ $font: "Montserrat", sans-serif;
 $color-gray: #333333;
 $color-primary: rgb(0, 153, 204);
 
+// breakpoints
+$bp-xl: 1200px;
+$bp-l: 992px;
+$bp-m: 768px;
+$bp-s: 576px;
+$bp-xs: 400px;
+
 * {
   margin: 0;
   padding: 0;
