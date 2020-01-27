@@ -148,9 +148,33 @@
         font-size: 12px; } }
 
 .slogans {
-  height: 300px;
+  height: 450px;
   background-color: #0099cc;
-  color: #fff; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  @media (max-width: 576px) {
+    .slogans {
+      height: 300px; } }
+  @media (max-width: 400px) {
+    .slogans {
+      height: 250px; } }
+  .slogans__img {
+    height: 400px;
+    width: auto; }
+    @media (max-width: 768px) {
+      .slogans__img {
+        height: 350px; } }
+    @media (max-width: 576px) {
+      .slogans__img {
+        height: 250px; } }
+    @media (max-width: 400px) {
+      .slogans__img {
+        height: 180px; } }
 
 .subjects {
   font-family: "Montserrat", sans-serif; }
