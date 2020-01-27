@@ -6,6 +6,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 25px;
+
+    @media (max-width: $bp-m) {
+      font-size: 20px;
+    }
   }
 
   .subject {
@@ -15,30 +19,42 @@
       font-size: 22px;
       font-weight: bold;
       letter-spacing: 1px;
+
+      @media (max-width: $bp-m) {
+        font-size: 18px;
+      }
     }
   }
 
   .subject--sport {
     .subject__content {
       height: 500px;
-      background-color: #0096E1;
+      background-color: #0096e1;
       color: #fff;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
+      @media (max-width: $bp-m) {
+        grid-template-columns: 1fr;
+      }
     }
 
     .image {
       // background-image: url("/images/pge-stadium.png");
-      background-image: url("./../../dist/images/pge-stadium.png");
+      background-image: url("./../../dist/images/pge-stadium.jpg");
       background-size: cover;
-      background-position:center;
+      background-position: center;
     }
-    
+
     .graph {
       background-image: url("./../../dist/images/sport-chart.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+
+      @media (max-width: $bp-m) {
+        margin: 15px 0;
+      }
 
       &__title {
         font-size: 18px;
@@ -63,6 +79,11 @@
       background-color: #ffdf00;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
+      @media (max-width: $bp-m) {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
     }
 
     .graph {
@@ -71,21 +92,57 @@
       justify-content: space-evenly;
       align-items: center;
       padding: 40px;
+      @media (max-width: $bp-l) {
+        padding: 20px;
+      }
 
       &__title {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
         line-height: 1.5;
+
+        @media (max-width: $bp-xl) {
+          font-size: 17px;
+        }
+        @media (max-width: $bp-m) {
+          font-size: 16px;
+        }
+        @media (max-width: $bp-s) {
+          font-size: 15px;
+        }
+        @media (max-width: $bp-xs) {
+          font-size: 14px;
+        }
       }
 
       &__image {
         width: 500px;
         height: auto;
+
+        @media (max-width: $bp-l) {
+          width: 400px;
+        }
+        @media (max-width: $bp-s) {
+          width: 300px;
+        }
+        @media (max-width: $bp-xs) {
+          width: 250px;
+        }
       }
       &__caption {
         font-size: 14px;
         text-align: center;
+
+        @media (max-width: $bp-m) {
+          font-size: 13px;
+        }
+        @media (max-width: $bp-s) {
+          font-size: 12px;
+        }
+        @media (max-width: $bp-xs) {
+          font-size: 11px;
+        }
       }
     }
 
@@ -97,8 +154,28 @@
       padding-right: 100px;
       line-height: 1.6;
 
+      @media (max-width: $bp-xl) {
+        padding-right: 20px;
+        font-size: 15px;
+      }
+      @media (max-width: $bp-l) {
+        font-size: 14px;
+        text-align: justify;
+      }
+      @media (max-width: $bp-m) {
+        padding: 20px;
+      }
+      @media (max-width: $bp-s) {
+        font-size: 13px;
+      }
+      @media (max-width: $bp-xs) {
+        font-size: 12px;
+      }
+
       &__text {
-        margin-bottom: 20px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
 
         &--bold {
           font-weight: bold;

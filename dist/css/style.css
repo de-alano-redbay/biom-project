@@ -160,20 +160,29 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 25px; }
+    @media (max-width: 768px) {
+      .subjects__title {
+        font-size: 20px; } }
   .subjects .subject__title {
     text-align: center;
     margin: 20px 0;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px; }
+    @media (max-width: 768px) {
+      .subjects .subject__title {
+        font-size: 18px; } }
   .subjects .subject--sport .subject__content {
     height: 500px;
-    background-color: #0096E1;
+    background-color: #0096e1;
     color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 768px) {
+      .subjects .subject--sport .subject__content {
+        grid-template-columns: 1fr; } }
   .subjects .subject--sport .image {
-    background-image: url("./../../dist/images/pge-stadium.png");
+    background-image: url("./../../dist/images/pge-stadium.jpg");
     background-size: cover;
     background-position: center; }
   .subjects .subject--sport .graph {
@@ -181,6 +190,9 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
+    @media (max-width: 768px) {
+      .subjects .subject--sport .graph {
+        margin: 15px 0; } }
     .subjects .subject--sport .graph__title {
       font-size: 18px;
       font-weight: bold;
@@ -197,23 +209,60 @@
     background-color: #ffdf00;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 768px) {
+      .subjects .subject--transport .subject__content {
+        grid-template-columns: 1fr;
+        height: auto; } }
   .subjects .subject--transport .graph {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 40px; }
+    @media (max-width: 992px) {
+      .subjects .subject--transport .graph {
+        padding: 20px; } }
     .subjects .subject--transport .graph__title {
       font-size: 18px;
       font-weight: bold;
       text-align: center;
       line-height: 1.5; }
+      @media (max-width: 1200px) {
+        .subjects .subject--transport .graph__title {
+          font-size: 17px; } }
+      @media (max-width: 768px) {
+        .subjects .subject--transport .graph__title {
+          font-size: 16px; } }
+      @media (max-width: 576px) {
+        .subjects .subject--transport .graph__title {
+          font-size: 15px; } }
+      @media (max-width: 400px) {
+        .subjects .subject--transport .graph__title {
+          font-size: 14px; } }
     .subjects .subject--transport .graph__image {
       width: 500px;
       height: auto; }
+      @media (max-width: 992px) {
+        .subjects .subject--transport .graph__image {
+          width: 400px; } }
+      @media (max-width: 576px) {
+        .subjects .subject--transport .graph__image {
+          width: 300px; } }
+      @media (max-width: 400px) {
+        .subjects .subject--transport .graph__image {
+          width: 250px; } }
     .subjects .subject--transport .graph__caption {
       font-size: 14px;
       text-align: center; }
+      @media (max-width: 768px) {
+        .subjects .subject--transport .graph__caption {
+          font-size: 13px; } }
+      @media (max-width: 576px) {
+        .subjects .subject--transport .graph__caption {
+          font-size: 12px; } }
+      @media (max-width: 400px) {
+        .subjects .subject--transport .graph__caption {
+          font-size: 11px; } }
   .subjects .subject--transport .description {
     display: flex;
     font-size: 16px;
@@ -221,10 +270,27 @@
     justify-content: center;
     padding-right: 100px;
     line-height: 1.6; }
-    .subjects .subject--transport .description__text {
+    @media (max-width: 1200px) {
+      .subjects .subject--transport .description {
+        padding-right: 20px;
+        font-size: 15px; } }
+    @media (max-width: 992px) {
+      .subjects .subject--transport .description {
+        font-size: 14px;
+        text-align: justify; } }
+    @media (max-width: 768px) {
+      .subjects .subject--transport .description {
+        padding: 20px; } }
+    @media (max-width: 576px) {
+      .subjects .subject--transport .description {
+        font-size: 13px; } }
+    @media (max-width: 400px) {
+      .subjects .subject--transport .description {
+        font-size: 12px; } }
+    .subjects .subject--transport .description__text:not(:last-child) {
       margin-bottom: 20px; }
-      .subjects .subject--transport .description__text--bold {
-        font-weight: bold; }
+    .subjects .subject--transport .description__text--bold {
+      font-weight: bold; }
     .subjects .subject--transport .description .bold {
       font-weight: bold; }
 
